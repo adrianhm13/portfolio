@@ -9,10 +9,18 @@ export const Navbar = styled.header(
   },
   (props) => ({
     backgroundColor: props.theme.primary.light,
-    paddingTop: props.theme.padding.small,
-    paddingBottom: props.theme.padding.small,
-    paddingRight: props.theme.padding.large,
-    paddingLeft: props.theme.padding.large,
+    "@media (min-width: 0px)": {
+      paddingRight: props.theme.padding.small,
+      paddingLeft: props.theme.padding.small,
+      paddingTop: props.theme.padding.small,
+      paddingBottom: props.theme.padding.small,
+    },
+    "@media (min-width: 900px)": {
+      paddingTop: props.theme.padding.small,
+      paddingBottom: props.theme.padding.small,
+      paddingRight: props.theme.padding.large,
+      paddingLeft: props.theme.padding.large,
+    },
   })
 );
 
