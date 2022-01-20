@@ -2,10 +2,19 @@ import styled from "@emotion/styled";
 
 export const Navbar = styled.header(
   {
+    position: "fixed",
+    top: "0",
+    zIndex: "50",
+    transition: "all .3s ease",
+    //
+    width: "100%",
     maxWidth: "100%",
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     alignItems: "center",
+    "&.hide": {
+      top: '-72px'
+    }
   },
   (props) => ({
     backgroundColor: props.theme.primary.light,
@@ -16,8 +25,8 @@ export const Navbar = styled.header(
       paddingBottom: props.theme.padding.small,
     },
     "@media (min-width: 900px)": {
-      paddingTop: props.theme.padding.small,
-      paddingBottom: props.theme.padding.small,
+      paddingTop: props.theme.padding.extraSmall,
+      paddingBottom: props.theme.padding.extraSmall,
       paddingRight: props.theme.padding.large,
       paddingLeft: props.theme.padding.large,
     },
@@ -27,6 +36,7 @@ export const Navbar = styled.header(
 export const Title = styled.h1((props) => ({
   fontFamily: props.theme.typography.h1.fontFamily,
   fontWeight: props.theme.typography.h1.fontWeight,
+  fontSize: "clamp(1.5em, 2.5vw, 2.5em)",
 }));
 
 export const SectionsNav = styled.nav(

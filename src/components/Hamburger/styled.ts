@@ -32,11 +32,11 @@ export const Hamburger = styled.button({
     "&:hover": {
       cursor: "pointer",
     },
-    "@media (min-width: 0px)": {
-      display: "block",
-    },
-    "@media (min-width: 900px)": {
-      display: "none",
-    },
+  },
+  "@media (min-width: 0px)": {
+    display: "block",
+  },
+  "@media (min-width: 900px)": {
+    display: "none",
   },
 });

@@ -43,6 +43,7 @@ export const theme = {
             }
         },
         padding: {
+            extraSmall: '0.5rem',
             small: '1rem',
             normal: '2rem',
             large: '3rem',
