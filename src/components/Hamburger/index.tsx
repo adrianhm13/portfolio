@@ -1,8 +1,11 @@
-import { useState } from "react";
 import * as Styled from "./styled";
 
-export default function Hamburger() {
-  const [isActive, setIsActive] = useState(false);
+type HamburgerProps = {
+  isActive: null | boolean,
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export default function Hamburger({isActive, setIsActive}:HamburgerProps) {
   return (
     <Styled.Hamburger
       className={isActive ? "isActive" : ""}

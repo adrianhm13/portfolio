@@ -2,10 +2,6 @@ import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const showSection = keyframes`
-/* 0%{
-  opacity: 0;
-  transform: translateY(100px)
-} */
 to{
   opacity: 1;
   transform: translateY(0)

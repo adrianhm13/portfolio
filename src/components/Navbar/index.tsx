@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useScrollHeader } from "../../hooks/useScrollHeader";
 
 import { Button } from "../Button/styled";
-import Hamburger from "../Hamburger";
+import Drawer from "../Drawer";
 
 import * as Styled from "./styled";
 
@@ -28,7 +28,7 @@ export default function Navbar() {
         <li onClick={() => handleClick("Contact")}>Contact</li>
         <Button>Resume</Button>
       </Styled.SectionsNav>
-      <Hamburger />
+      <Drawer />
     </Styled.Navbar>
   );
 }

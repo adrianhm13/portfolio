@@ -3,7 +3,8 @@ import styled from "@emotion/styled";
 export const Hamburger = styled.button({
   backgroundColor: "transparent",
   border: "none",
-  
+  position: 'relative',
+  zIndex: '150',
   "&.isActive .line:nth-child(1)": {
     webkitTransform: "translateY(10px) rotate(45deg)",
     msTransform: "translateY(10px) rotate(45deg)",
