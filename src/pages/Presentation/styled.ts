@@ -16,22 +16,6 @@ const blink = keyframes`
 }
 `;
 
-export const Container = styled.div({
-  maxWidth: "1024px",
-  margin: "0 auto",
-});
-export const Section = styled.section(
-  {
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-  },
-  (props) => ({
-    paddingRight: props.theme.padding.small,
-    paddingLeft: props.theme.padding.small,
-  })
-);
 export const Hello = styled.h5((props) => ({
   ...props.theme.typography.hello,
 }));

@@ -10,7 +10,8 @@ export const Button = styled.a({
         fontFamily: props.theme.typography.fontMono,
         border: `1px solid ${props.theme.secondary.light}`,
         '&:hover': {
-            backgroundColor: props.theme.secondary.main,
+            backgroundColor: props.theme.secondary.light,
+            color: 'black',
             border: `1px solid ${props.theme.secondary.main}`,
         }
     })
