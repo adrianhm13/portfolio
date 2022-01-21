@@ -1,10 +1,11 @@
 import * as Styled from "./styled";
 import Section from "../../components/Section";
+import PageTitle from "../../components/PageTitle";
 
-export default function AboutMe() {
+export default function About() {
   return (
-    <Section>
-      <Styled.PageTitle>About Me</Styled.PageTitle>
+    <Section id="About">
+      <PageTitle title="About" />
       <Styled.Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur
         sodales elit sit amet pretium. Aliquam ultrices auctor purus ac cursus.

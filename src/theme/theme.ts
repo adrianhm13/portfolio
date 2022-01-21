@@ -10,6 +10,7 @@ export const theme = {
   primary: {
     main: "#191d32",
     light: "#282f44",
+    elevation: "#1F2435",
   },
   secondary: {
     main: "#5a189a",

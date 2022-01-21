@@ -11,16 +11,21 @@ export default function Navbar() {
   useEffect(() => {
     scrollHeader();
   }, [scrollHeader]);
+
+  const handleClick = (id: string) => {
+    const anchor = document.getElementById(id);
+    anchor?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
   return (
     <Styled.Navbar id="header">
       <Styled.Title>
         adrianhm<span>.dev</span>
       </Styled.Title>
       <Styled.SectionsNav>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li onClick={() => handleClick("About")}>About</li>
+        <li onClick={() => handleClick("Skills")}>Skills</li>
+        <li onClick={() => handleClick("Projects")}>Projects</li>
+        <li onClick={() => handleClick("Contact")}>Contact</li>
         <Button>Resume</Button>
       </Styled.SectionsNav>
       <Hamburger />
