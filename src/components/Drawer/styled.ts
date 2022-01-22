@@ -1,34 +1,49 @@
-import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
-
-const show = keyframes`
-0%{
-    opacity: 1;
-    transform: translateX(100vw)
-}
-
-100%{
-    opacity: 1;
-  transform: translateX(0)
-}
-`;
 
 export const Drawer = styled.div(
   {
-    position: "absolute",
-    opacity: "0",
+    position: "fixed",
     top: "0",
-    left: "0",
-    minWidth: "100vw",
-    minHeight: "100vh",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transform: "translateX(100%)",
+    width: "100%",
+    height: "100vh",
+    transition: "all .5s",
     "&.show": {
-      animation: `${show} 1s cubic-bezier(0.65, 0.05, 0.36, 1) forwards`,
-      "@media (min-width: 900px)": {
-        display: "none",
-      },
+      transform: "translateX(-4%)",
+    },
+    "@media (min-width: 900px)": {
+      display: "none",
     },
   },
   (props) => ({
     backgroundColor: props.theme.primary.main,
+    "& ul": {
+        listStyle: 'none',
+        lineHeight: '5rem',
+        fontFamily: props.theme.typography.fontPoppins,
+        fontSize: '2.5rem',
+    },
+    "& > ul > li > a" : {
+        textDecoration: 'none',
+        color: props.theme.white,
+        "&:before": {
+            content: `'>>'`,
+            fontWeight: "900",
+            color: "#e0aaff",
+            letterSpacing: "-15px",
+            paddingRight: "1rem",
+          },
+          "&:after": {
+            content: `'.'`,
+            fontWeight: "900",
+            color: "#e0aaff",
+            letterSpacing: "-15px",
+            paddingRight: "1rem",
+          },
+    }
   })
 );

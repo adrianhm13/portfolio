@@ -16,6 +16,7 @@ export const theme = {
     main: "#5a189a",
     light: "#e0aaff",
   },
+  white: "#FFFAFA",
   typography: {
     fontMono: "Roboto Mono, sans-serif",
     fontPoppins: "Poppins, sans-serif",

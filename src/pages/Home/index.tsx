@@ -2,6 +2,7 @@ import Container from "../../components/Container";
 import Presentation from "../Presentation";
 import About from "../About";
 import Skills from "../Skills";
+import Projects from "../Projects";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Presentation />
       <About />
       <Skills />
+      <Projects />
     </Container>
   );
 }
