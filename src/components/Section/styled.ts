@@ -2,9 +2,21 @@ import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const showSection = keyframes`
+from{
+  opacity: 0;
+  transform: translateY(5rem)
+}
 to{
   opacity: 1;
   transform: translateY(0)
+}
+`;
+export const fadeOut = keyframes`
+from{
+  opacity: 1;
+}
+to{
+  opacity: 0;
 }
 `;
 
@@ -14,10 +26,14 @@ export const Section = styled.section(
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    marginTop: "55px",
     opacity: '0',
     "&.fadeIn": {
-      transform: "translateY(5rem)",
-      animation: `${showSection} 2s ease forwards`,
+      animation: `${showSection} 2s ease forwards .1s`,
+    },
+    "&.fadeOut": {
+      opacity: '1',
+      animation: `${fadeOut} 2s ease forwards .1s`,
     },
   },
   (props) => ({

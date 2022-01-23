@@ -33,7 +33,7 @@ export const Subtitle = styled.h3((props) => ({
 export const TypeWrite = styled.h3(
   {
     width: "30ch",
-    animation: `${typing} 2s steps(32), ${blink} .5s step-end infinite alternate`,
+    animation: `${typing} 3s steps(30), ${blink} .5s step-end infinite alternate`,
     whiteSpace: "nowrap",
     overflow: "hidden",
     borderRight: "3px solid",

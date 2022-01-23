@@ -14,7 +14,7 @@ export default function Navbar() {
 
   const handleClick = (id: string) => {
     const anchor = document.getElementById(id);
-    anchor?.scrollIntoView({ behavior: "smooth", block: "center" });
+    anchor?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (
     <Styled.Navbar id="header">

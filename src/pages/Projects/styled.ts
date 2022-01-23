@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const ProjectContainer = styled.div({
   paddingBottom: "1rem",
   paddingTop: "1rem",
+  marginBottom: '2.5rem',
   "@media (min-width: 0px)": {
     paddingLeft: "0",
   },
@@ -15,10 +16,12 @@ export const ProjectContent = styled.div({
   display: "flex",
   flexDirection: "column",
   gap: '1rem',
+  marginBottom: '2.5rem',
 });
 
 export const ProjectInformation = styled.div(
   {
+    fontSize: '18px',
     display: "flex",
     flexDirection: "row",
     width: "100%",
@@ -36,6 +39,7 @@ export const ProjectInformation = styled.div(
     "& hr": {
       border: "none",
       borderRadius: "50%",
+      opacity: '0.3',
       "@media (min-width: 0px)": {
         borderTop: `1px solid ${props.theme.secondary.light}`,
         width: "100%",
