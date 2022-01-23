@@ -83,14 +83,14 @@ function SkillsTools() {
 
 const skillsLanguage = [
   {
-    skill: "Javascript",
-    badge:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
-  },
-  {
     skill: "Typescript",
     badge:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
+    skill: "Javascript",
+    badge:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
   },
   {
     skill: "HTML5",

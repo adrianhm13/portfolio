@@ -6,7 +6,6 @@ export const Navbar = styled.header(
     top: "0",
     zIndex: "50",
     transition: "all .3s ease",
-    //
     width: "100%",
     maxWidth: "100%",
     display: "flex",
@@ -65,7 +64,7 @@ export const SectionsNav = styled.nav(
       position: "absolute",
       width: "100%",
       transform: "scaleX(0)",
-      height: "2px",
+      height: "1px",
       bottom: "0",
       left: "0",
       backgroundColor: props.theme.secondary.light,

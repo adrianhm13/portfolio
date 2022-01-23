@@ -2,8 +2,13 @@ import styled from "@emotion/styled";
 
 export const SkillsContainer = styled.div({
   paddingBottom: "1rem",
-  paddingLeft: "2rem",
   paddingTop: "1rem",
+  "@media (min-width: 0px)": {
+    paddingLeft: "0",
+  },
+  "@media (min-width: 900px)": {
+    paddingLeft: "2rem",
+  },
 });
 
 export const SkillsCategory = styled.h5({

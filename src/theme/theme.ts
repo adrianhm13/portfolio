@@ -71,5 +71,9 @@ export const theme = {
     normal: "2rem",
     large: "3rem",
     extraLarge: "5rem",
+    badge: {
+      X: '0.75rem',
+      Y: '0.5rem'
+    }
   },
 };
