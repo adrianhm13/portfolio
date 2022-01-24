@@ -7,6 +7,7 @@ export type ThemeCustom = typeof theme;
 // xl, extra-large: 1536px
 
 export const theme = {
+  white: "#FFFAFA",
   primary: {
     main: "#191d32",
     light: "#282f44",
@@ -16,7 +17,13 @@ export const theme = {
     main: "#5a189a",
     light: "#e0aaff",
   },
-  white: "#FFFAFA",
+  fontWeight: {
+    extraLight: '100',
+    light: '200',
+    normal: '300',
+    bold: '500',
+    extraBold: '900',
+  },
   typography: {
     fontMono: "Roboto Mono, sans-serif",
     fontPoppins: "Poppins, sans-serif",

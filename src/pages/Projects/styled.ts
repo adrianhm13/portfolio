@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const ProjectContainer = styled.div({
   paddingBottom: "1rem",
   paddingTop: "1rem",
-  marginBottom: '2.5rem',
+  marginBottom: "2.5rem",
   "@media (min-width: 0px)": {
     paddingLeft: "0",
   },
@@ -15,13 +15,13 @@ export const ProjectContainer = styled.div({
 export const ProjectContent = styled.div({
   display: "flex",
   flexDirection: "column",
-  gap: '1rem',
-  marginBottom: '2.5rem',
+  gap: "1rem",
+  marginBottom: "2.5rem",
 });
 
 export const ProjectInformation = styled.div(
   {
-    fontSize: '18px',
+    fontSize: "18px",
     display: "flex",
     flexDirection: "row",
     width: "100%",
@@ -39,7 +39,7 @@ export const ProjectInformation = styled.div(
     "& hr": {
       border: "none",
       borderRadius: "50%",
-      opacity: '0.3',
+      opacity: "0.3",
       "@media (min-width: 0px)": {
         borderTop: `1px solid ${props.theme.secondary.light}`,
         width: "100%",
@@ -63,16 +63,40 @@ export const ImageContainer = styled.div({
   },
 });
 
-export const ProjectTitle = styled.h5({
-  fontFamily: "Poppins, sans-serif",
-  fontWeight: "300",
-  fontSize: "clamp(0.75rem, 5vw, 1.5rem)",
+export const ProjectTitle = styled.h5(
+  {
+    fontFamily: "Poppins, sans-serif",
+    fontSize: "clamp(1.25rem, 5vw, 1.5rem)",
+    "&:before": {
+      content: `'>'`,
+      fontWeight: "900",
+      color: "#e0aaff",
+      letterSpacing: "-15px",
+      paddingRight: "1rem",
+    },
+    "&:after": {
+      content: `':'`,
+      fontWeight: "900",
+      color: "#e0aaff",
+      letterSpacing: "-15px",
+      paddingRight: "1rem",
+    },
+  },
+  (props) => ({
+    fontWeight: props.theme.fontWeight.bold,
+  })
+);
+
+export const TitleDetails = styled.h5((props) => ({
+  fontFamily: props.theme.typography.fontPoppins,
+  fontWeight: props.theme.fontWeight.bold,
+  fontSize: "18px",
   "&:before": {
-    content: `'>'`,
+    content: `'<>'`,
     fontWeight: "900",
     color: "#e0aaff",
-    letterSpacing: "-15px",
-    paddingRight: "1rem",
+    letterSpacing: "-2px",
+    paddingRight: "0.3rem",
   },
   "&:after": {
     content: `':'`,
@@ -81,4 +105,10 @@ export const ProjectTitle = styled.h5({
     letterSpacing: "-15px",
     paddingRight: "1rem",
   },
-});
+}));
+
+export const ContentDetails = styled.p((props) => ({
+  fontFamily: props.theme.typography.fontPoppins,
+  fontWeight: props.theme.fontWeight.extraLight,
+  fontSize: "16px",
+}));
