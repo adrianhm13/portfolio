@@ -5,6 +5,8 @@ export const Button = styled.a({
     fontSize: '0.8rem',
     transition: '0.5s',
     cursor: 'pointer',
+    textDecoration: 'none',
+    color: 'white',
 },
     props => ({
         fontFamily: props.theme.typography.fontMono,

@@ -112,3 +112,11 @@ export const ContentDetails = styled.p((props) => ({
   fontWeight: props.theme.fontWeight.extraLight,
   fontSize: "16px",
 }));
+
+export const ButtonsContainer = styled.div({
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  gap: '50px',
+  marginTop: '1rem',
+})

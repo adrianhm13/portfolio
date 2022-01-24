@@ -10,14 +10,11 @@ export const useElementOnScreen = (id: string | undefined) => {
     const [entry] = entries;
     setIsVisible(entry.isIntersecting);
   };
-  let animation = "";
-  if (isVisible) {
-    animation = "fadeIn";
-  } else {
-    animation = "fadeOut";
-  }
+  
+  const animation = isVisible ? "fadeIn" : ''
+
   useEffect(() => {
-    const options = { root: null, rootMargin: "0px", threshold: 0.2 };
+    const options = { root: null, rootMargin: "0px", threshold: 0};
     const observer = new IntersectionObserver(callbackFunction, options);
     console.log(containerRef.current);
     if (containerRef.current) {

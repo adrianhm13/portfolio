@@ -11,14 +11,6 @@ to{
   transform: translateY(0)
 }
 `;
-export const fadeOut = keyframes`
-from{
-  opacity: 1;
-}
-to{
-  opacity: 0;
-}
-`;
 
 export const Section = styled.section(
   {
@@ -26,14 +18,9 @@ export const Section = styled.section(
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    marginTop: "55px",
-    opacity: '0',
+    opacity: "0",
     "&.fadeIn": {
       animation: `${showSection} 2s ease forwards .1s`,
-    },
-    "&.fadeOut": {
-      opacity: '1',
-      animation: `${fadeOut} 2s ease forwards .1s`,
     },
   },
   (props) => ({
