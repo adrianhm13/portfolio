@@ -16,7 +16,6 @@ export const useElementOnScreen = (id: string | undefined) => {
   useEffect(() => {
     const options = { root: null, rootMargin: "0px", threshold: 0};
     const observer = new IntersectionObserver(callbackFunction, options);
-    console.log(containerRef.current);
     if (containerRef.current) {
       observer.observe(containerRef.current);
     }

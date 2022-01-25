@@ -22,10 +22,12 @@ export default function Navbar() {
         adrianhm<span>.dev</span>
       </Styled.Title>
       <Styled.SectionsNav>
-        <li onClick={() => handleClick("About")}>About</li>
-        <li onClick={() => handleClick("Skills")}>Skills</li>
-        <li onClick={() => handleClick("Projects")}>Projects</li>
-        <li onClick={() => handleClick("Contact")}>Contact</li>
+        <ul>
+          <li onClick={() => handleClick("About")}>About</li>
+          <li onClick={() => handleClick("Skills")}>Skills</li>
+          <li onClick={() => handleClick("Projects")}>Projects</li>
+          <li onClick={() => handleClick("Contact")}>Contact</li>
+        </ul>
         <Button>Resume</Button>
       </Styled.SectionsNav>
       <Drawer />

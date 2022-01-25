@@ -12,8 +12,8 @@ export const Navbar = styled.header(
     justifyContent: "space-around",
     alignItems: "center",
     "&.hide": {
-      top: '-72px'
-    }
+      top: "-72px",
+    },
   },
   (props) => ({
     backgroundColor: props.theme.primary.light,
@@ -38,42 +38,42 @@ export const Title = styled.h1((props) => ({
   fontSize: "clamp(1.5em, 2.5vw, 2.5em)",
 }));
 
-export const SectionsNav = styled.nav(
-  {
+export const SectionsNav = styled.nav((props) => ({
+  display: "flex",
+  gap: "2rem",
+  "& ul": {
     display: "flex",
     alignItems: "center",
     fontSize: "17px",
     listStyle: "none",
-    gap: "2rem",
-    "@media (min-width: 0px)": {
-      display: "none",
-    },
-    "@media (min-width: 900px)": {
-      display: "inline-flex",
-    },
-  },
-  (props) => ({
     fontFamily: props.theme.typography.fontMono,
-    "& li": {
-      display: "inline-block",
-      position: "relative",
-      cursor: "pointer",
-    },
-    "& li:after": {
-      content: '""',
-      position: "absolute",
-      width: "100%",
-      transform: "scaleX(0)",
-      height: "1px",
-      bottom: "0",
-      left: "0",
-      backgroundColor: props.theme.secondary.light,
-      transformOrigin: "bottom right",
-      transition: "transform 0.25s ease-out",
-    },
-    "& li:hover:after": {
-      transform: "scaleX(1)",
-      transformOrigin: "bottom left",
-    },
-  })
-);
+    gap: "1.2rem",
+  },
+  "@media (min-width: 0px)": {
+    display: "none",
+  },
+  "@media (min-width: 900px)": {
+    display: "inline-flex",
+  },
+  "& li": {
+    display: "inline-block",
+    position: "relative",
+    cursor: "pointer",
+  },
+  "& li:after": {
+    content: '""',
+    position: "absolute",
+    width: "100%",
+    transform: "scaleX(0)",
+    height: "1px",
+    bottom: "0",
+    left: "0",
+    backgroundColor: props.theme.secondary.light,
+    transformOrigin: "bottom right",
+    transition: "transform 0.25s ease-out",
+  },
+  "& li:hover:after": {
+    transform: "scaleX(1)",
+    transformOrigin: "bottom left",
+  },
+}));

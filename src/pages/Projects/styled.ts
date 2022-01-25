@@ -30,6 +30,9 @@ export const ProjectInformation = styled.div(
     textAlign: "justify",
     "@media (min-width: 0px)": {
       flexWrap: "wrap",
+      "& div": {
+        width: '100%',
+      },
     },
     "@media (min-width: 900px)": {
       flexWrap: "nowrap",
@@ -107,16 +110,27 @@ export const TitleDetails = styled.h5((props) => ({
   },
 }));
 
-export const ContentDetails = styled.p((props) => ({
+export const ContentDetails = styled.div((props) => ({
   fontFamily: props.theme.typography.fontPoppins,
   fontWeight: props.theme.fontWeight.extraLight,
   fontSize: "16px",
+  "& ul": {
+    marginTop: '0.5rem',
+    paddingLeft: props.theme.padding.small,
+    listStyle: "none",
+  },
+  "& li:before": {
+    fontSize: '18px',
+    lineHeight: '15px',
+    content: '"\u2023"',
+    marginRight: "0.5rem",
+  },
 }));
 
 export const ButtonsContainer = styled.div({
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'center',
-  gap: '50px',
-  marginTop: '1rem',
-})
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  gap: "50px",
+  marginTop: "1rem",
+});

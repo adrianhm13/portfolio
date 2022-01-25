@@ -14,6 +14,7 @@ to{
 
 export const Section = styled.section(
   {
+    marginBottom: '2rem',
     minHeight: "100vh",
     display: "flex",
     flexDirection: "column",

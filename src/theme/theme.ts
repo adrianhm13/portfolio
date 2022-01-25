@@ -70,6 +70,7 @@ export const theme = {
     hello: {
       fontFamily: "Roboto Mono, sans-serif",
       fontSize: "1rem",
+      margin: '0',
     },
   },
   padding: {

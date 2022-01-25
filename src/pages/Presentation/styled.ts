@@ -16,7 +16,7 @@ const blink = keyframes`
 }
 `;
 
-export const Hello = styled.h5((props) => ({
+export const Hello = styled.p((props) => ({
   ...props.theme.typography.hello,
 }));
 
