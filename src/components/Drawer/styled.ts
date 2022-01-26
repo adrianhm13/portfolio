@@ -13,7 +13,7 @@ export const Drawer = styled.div(
     height: "100vh",
     transition: "all .5s",
     "&.show": {
-      transform: "translateX(-4%)",
+      transform: "translateX(0)",
     },
     "@media (min-width: 900px)": {
       display: "none",

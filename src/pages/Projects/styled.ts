@@ -114,6 +114,7 @@ export const ContentDetails = styled.div((props) => ({
   fontFamily: props.theme.typography.fontPoppins,
   fontWeight: props.theme.fontWeight.extraLight,
   fontSize: "16px",
+  paddingTop: props.theme.padding.normal,
   "& ul": {
     marginTop: '0.5rem',
     paddingLeft: props.theme.padding.small,

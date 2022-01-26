@@ -9,6 +9,9 @@ const typing = keyframes`
   from {
     width: 0;
   }
+  to{
+    width: 32ex;
+  }
 `;
 const blink = keyframes`
 50% {
@@ -32,8 +35,7 @@ export const Subtitle = styled.h3((props) => ({
 
 export const TypeWrite = styled.h3(
   {
-    width: "30ch",
-    animation: `${typing} 3s steps(30), ${blink} .5s step-end infinite alternate`,
+    animation: `${typing} 2s steps(28), ${blink} .5s step-end infinite alternate`,
     whiteSpace: "nowrap",
     overflow: "hidden",
     borderRight: "3px solid",
