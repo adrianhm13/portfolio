@@ -20,7 +20,7 @@ export default function Contact() {
       </Styled.Text>
       <Styled.ContactContainer>
         {contactData.map((contact) => (
-          <InfoContact contact={contact} />
+          <InfoContact key={contact.typeContact} contact={contact} />
         ))}
       </Styled.ContactContainer>
     </Section>
