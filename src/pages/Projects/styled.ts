@@ -39,6 +39,7 @@ export const ProjectInformation = styled.div(
     },
   },
   (props) => ({
+    paddingTop: props.theme.padding.normal,
     "& hr": {
       border: "none",
       borderRadius: "50%",
