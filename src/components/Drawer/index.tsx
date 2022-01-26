@@ -3,6 +3,7 @@ import { Button } from "../Button/styled";
 
 import Hamburger from "../Hamburger";
 import * as Styled from "./styled";
+import Resume from "../../assets/resume/Adrian_Resume.pdf";
 
 const pages = ["About", "Skills", "Projects", "Contact"];
 
@@ -26,7 +27,11 @@ export default function Drawer() {
             </li>
           ))}
         </ul>
-        <Button style={{ marginTop: "2.5rem", padding: "1rem 2rem" }}>
+        <Button
+          href={Resume}
+          target="_blank"
+          style={{ marginTop: "2.5rem", padding: "1rem 2rem" }}
+        >
           Resume
         </Button>
       </Styled.Drawer>

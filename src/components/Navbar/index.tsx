@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useScrollHeader } from "../../hooks/useScrollHeader";
 
+import Resume from '../../assets/resume/Adrian_Resume.pdf'
 import { Button } from "../Button/styled";
 import Drawer from "../Drawer";
 
@@ -28,7 +29,7 @@ export default function Navbar() {
           <li onClick={() => handleClick("Projects")}>Projects</li>
           <li onClick={() => handleClick("Contact")}>Contact</li>
         </ul>
-        <Button>Resume</Button>
+        <Button href={Resume} target="_blank">Resume</Button>
       </Styled.SectionsNav>
       <Drawer />
     </Styled.Navbar>
