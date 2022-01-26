@@ -147,7 +147,7 @@ export const projects = [
     challenges: (
       <Styled.ContentDetails>
         I decided to take the opportunity to <span>learn Typescript</span> with
-        this project, it has been a challenge to work with typescript, but it
+        this project, it has been a challenge to work with it, but it
         has given me a different point of view while working with
         it. The main advantage is that it gives me{" "}
         <span>better confidence</span> in knowing what kind of information I'm

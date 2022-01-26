@@ -49,7 +49,7 @@ export const SkillCard = styled.div(
     gap: '15px',
     fontWeight: '200',
     "& img" : {
-        width: '75px'
+        width: '50px'
     }
   },
   (props) => ({
