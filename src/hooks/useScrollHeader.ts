@@ -7,7 +7,6 @@ export const useScrollHeader = () => {
     let curScroll: number;
     let direction = 0;
     let prevDirection = 0;
-
     const headerDom = document.getElementById("header");
 
     const checkScroll = function () {
