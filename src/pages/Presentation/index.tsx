@@ -10,7 +10,7 @@ export default function Presentation() {
       </Styled.Title>
       <Styled.Profession>
         <Styled.Subtitle>I am a</Styled.Subtitle>
-        <Styled.TypeWrite>Front-End Software Engineer.</Styled.TypeWrite>
+        <Styled.TypeWrite>self-taught Front-End Software Engineer.</Styled.TypeWrite>
       </Styled.Profession>
     </Section>
   );
