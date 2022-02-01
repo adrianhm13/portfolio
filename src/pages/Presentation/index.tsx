@@ -9,8 +9,8 @@ export default function Presentation() {
         Adrian Hervas<span>.</span> {/*Change span to ::after*/}
       </Styled.Title>
       <Styled.Profession>
-        <Styled.Subtitle>I am a</Styled.Subtitle>
-        <Styled.TypeWrite>self-taught Front-End Software Engineer.</Styled.TypeWrite>
+        <Styled.Subtitle>I am a self-taught </Styled.Subtitle>
+        <Styled.TypeWrite>Front-End Software Engineer.</Styled.TypeWrite>
       </Styled.Profession>
     </Section>
   );
