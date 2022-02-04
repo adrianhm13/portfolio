@@ -11,19 +11,10 @@ export const Content = styled.div({
   }
 })
 
-export const AvatarDesktop = styled.img({
+export const Avatar = styled.div({
   width: '30%',
-  display: 'none',
-  "@media (min-width: 600px)":{
-    display: 'block'
-  }
-})
-
-export const AvatarPhone = styled.img({
-  width: '75%',
-  display: 'none',
-  "@media (max-width: 600px)":{
-    display: 'block'
+  "& img": {
+    width: '100%',
   }
 })
 
@@ -50,9 +41,11 @@ export const SubtitleText = styled.h5(props => ({
 
 export const Text = styled.p((props) => ({
   ...props.theme.typography.paragraph,
+  padding: props.theme.padding.normal,
   lineHeight: "2rem",
   width: '70%',
   "@media (max-width: 600px)": {
     width: '100%',
+    padding: props.theme.padding.small,
   },
 }));
