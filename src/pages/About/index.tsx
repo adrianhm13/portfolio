@@ -1,17 +1,17 @@
 import * as Styled from "./styled";
 import Section from "../../components/Section";
 import PageTitle from "../../components/PageTitle";
-import ProfilePicture from '../../assets/images/Avatar.png'
-
+import ProfilePhone from '../../assets/images/Avatar.png'
+import ProfileDesktop from '../../assets/images/Avatar_Rectangle.png'
 export default function About() {
   return (
     <Section id="About">
       <PageTitle title="About" />
       <Styled.Content>
-        <Styled.Avatar>
-          <img src={ProfilePicture} alt="Profile Adrian" />
-        </Styled.Avatar>
+        <Styled.AvatarPhone src={ProfilePhone}/>
+        <Styled.AvatarDesktop src={ProfileDesktop}/>
         <Styled.Text>
+          <Styled.SubtitleText>How everything begun</Styled.SubtitleText>
           Hello! my name is Adrian. I am a <span>self-taught web developer</span>.
           My interest in programming came up when I was modeling 3D characters as
           a hobby. At some point, I wanted to build a visual novel with the models
