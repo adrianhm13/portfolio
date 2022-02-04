@@ -2,7 +2,8 @@ import styled from "@emotion/styled"
 import HeroBackground from '../../assets/images/hero-background.png'
 
 export const Hero = styled.div({
-    background: `url(${HeroBackground})`,
+    backgroundImage: `url(${HeroBackground})`,
+    backgroundPosition: '50%',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     position: 'absolute',

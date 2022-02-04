@@ -18,14 +18,16 @@ const blink = keyframes`
   border-color: transparent;
 }
 `;
-
+export const BoxBackground = styled.div(props => ({
+  padding: props.theme.padding.small,
+}))
 export const Hello = styled.p((props) => ({
   ...props.theme.typography.hello,
 }));
 
 export const Title = styled.h2<TitleProps>((props) => ({
   ...props.theme.typography.h1,
-  fontSize: props.isName ? "5rem" : props.theme.typography.title.fontSize,
+  fontSize: props.isName ? "4rem" : props.theme.typography.title.fontSize,
 }));
 
 export const Subtitle = styled.h3((props) => ({
