@@ -1,6 +1,7 @@
 import * as Styled from "./styled";
 import Section from "../../components/Section";
 import PageTitle from "../../components/PageTitle";
+import ProfilePicture from '../../assets/images/Avatar.png'
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
       <PageTitle title="About" />
       <Styled.Content>
         <Styled.Avatar>
-          A
+          <img src={ProfilePicture} alt="Profile Adrian" />
         </Styled.Avatar>
         <Styled.Text>
           Hello! my name is Adrian. I am a <span>self-taught web developer</span>.
