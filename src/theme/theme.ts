@@ -64,7 +64,7 @@ export const theme = {
     paragraph: {
       fontFamily: "Poppins, sans-serif",
       fontWeight: "300",
-      fontSize: "clamp(0.9rem, 2.5vw, 1.2rem)",
+      fontSize: "1rem",
     },
     content: {},
     hello: {

@@ -9,7 +9,7 @@ export const Navbar = styled.header(
     width: "100%",
     maxWidth: "100%",
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "center",
     alignItems: "center",
     "&.hide": {
       top: "-72px",
@@ -32,11 +32,11 @@ export const Navbar = styled.header(
   })
 );
 
-export const Title = styled.h1((props) => ({
-  fontFamily: props.theme.typography.h1.fontFamily,
-  fontWeight: props.theme.typography.h1.fontWeight,
-  fontSize: "clamp(1.5em, 2.5vw, 2.5em)",
-}));
+// export const Title = styled.h1((props) => ({
+//   fontFamily: props.theme.typography.h1.fontFamily,
+//   fontWeight: props.theme.typography.h1.fontWeight,
+//   fontSize: "clamp(1.5em, 2.5vw, 2.5em)",
+// }));
 
 export const SectionsNav = styled.nav((props) => ({
   display: "flex",
@@ -47,7 +47,7 @@ export const SectionsNav = styled.nav((props) => ({
     fontSize: "17px",
     listStyle: "none",
     fontFamily: props.theme.typography.fontMono,
-    gap: "1.2rem",
+    gap: "1.5rem",
   },
   "@media (min-width: 0px)": {
     display: "none",

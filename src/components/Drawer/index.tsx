@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "../Button/styled";
 
+import { Button } from "../Button/styled";
 import Hamburger from "../Hamburger";
 import * as Styled from "./styled";
 import Resume from "../../assets/resume/Adrian_Resume.pdf";

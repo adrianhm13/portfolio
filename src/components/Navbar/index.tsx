@@ -19,9 +19,6 @@ export default function Navbar() {
   };
   return (
     <Styled.Navbar id="header">
-      <Styled.Title>
-        adrianhm<span>.dev</span>
-      </Styled.Title>
       <Styled.SectionsNav>
         <ul>
           <li onClick={() => handleClick("About")}>About</li>
