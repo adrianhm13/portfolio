@@ -43,7 +43,7 @@ export const Text = styled.p((props) => ({
   ...props.theme.typography.paragraph,
   padding: props.theme.padding.normal,
   lineHeight: "2rem",
-  width: '70%',
+  width: '100%',
   "@media (max-width: 600px)": {
     width: '100%',
     padding: props.theme.padding.small,

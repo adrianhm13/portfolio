@@ -8,9 +8,9 @@ export default function About() {
     <Section id="About">
       <PageTitle title="About" />
       <Styled.Content>
-        <Styled.Avatar>
+        {/* <Styled.Avatar>
           <img src={Profile} alt="Avatar" />
-        </Styled.Avatar>
+        </Styled.Avatar> */}
         <Styled.Text>
           <Styled.SubtitleText>How everything began</Styled.SubtitleText>
           Hello! my name is Adrian. I am a <span>self-taught web developer</span>.
