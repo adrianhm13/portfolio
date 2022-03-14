@@ -44,6 +44,22 @@ export const badges = {
     title: "Git",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
+  node: {
+    title: "Node.js",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+  },
+  express: {
+    title: "Express",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
+  },
+  heroku: {
+    title: "Heroku",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg",
+  },
+  mongo: {
+    title: "MongoDB",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg",
+  },
 };
 
 export const projects = [
@@ -106,15 +122,19 @@ export const projects = [
     picture: MockupFoodDelivery,
     explanation: (
       <Styled.ContentDetails>
-        An application to order food online with an eye-catching design. The
+        A full MERN application to order food online with an eye-catching
+        design. The backend it has been developed with{" "}
+        <span>Node.js and Express</span> connected to MongoDB as database. The
         following <span>features</span> are implemented in the application:
         <ul>
           <li>
-            <span>Signup system</span> to login and logout.
+            <span>Signup system</span> to login and logout with a basic auth
+            system in the backend with a security encryption for the passwords.
           </li>
           <li>
             <span>Shop system</span> which you can add the product you want to
-            the cart with <span>different options</span>
+            the cart with <span>different options</span> which will be sent as a
+            document to the database (<span>MongoDB</span>).
           </li>
         </ul>
         <br />
@@ -126,7 +146,9 @@ export const projects = [
               <li>
                 <span>Handle orders</span> from an admin account
               </li>
-              <li>Sales report represented by a <span>graphic</span></li>
+              <li>
+                Sales report represented by a <span>graphic</span>
+              </li>
             </ul>
           </li>
           <li style={{ marginTop: "1rem" }}>
@@ -147,11 +169,10 @@ export const projects = [
     challenges: (
       <Styled.ContentDetails>
         I decided to take the opportunity to <span>learn Typescript</span> with
-        this project, it has been a challenge to work with it, but it
-        has given me a different point of view while working with
-        it. The main advantage is that it gives me{" "}
-        <span>better confidence</span> in knowing what kind of information I'm
-        working with. I can also use this information as{" "}
+        this project, it has been a challenge to work with it, but it has given
+        me a different point of view while working with it. The main advantage
+        is that it gives me <span>better confidence</span> in knowing what kind
+        of information I'm working with. I can also use this information as{" "}
         <span>documentation</span>.
       </Styled.ContentDetails>
     ),
@@ -159,11 +180,14 @@ export const projects = [
       badges.react,
       badges.typescript,
       badges.materialUI,
-      badges.firebase,
+      badges.node,
+      badges.express,
+      badges.mongo,
+      badges.heroku,
     ],
     links: {
-      source: "https://github.com/adrianhm13/food-delivery",
-      preview: "https://food-delivery-3d3f4.web.app/",
+      source: "https://github.com/adrianhm13/takeaway",
+      preview: "https://nervous-wright-9a8871.netlify.app/",
     },
   },
   {
@@ -185,8 +209,8 @@ export const projects = [
         <span>Firebase</span>, the platform for{" "}
         <span>database creation and administration</span>. On the visual side,
         it was the first time I used <span>Bootstrap</span> for the layout, so I
-        had to adapt myself to use this kind of framework to style
-        the application.
+        had to adapt myself to use this kind of framework to style the
+        application.
       </Styled.ContentDetails>
     ),
     technologies: [

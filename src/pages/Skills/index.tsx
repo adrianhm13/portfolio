@@ -110,6 +110,11 @@ const skillsFrameworks = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
+    skill: "Express",
+    badge:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+  {
     skill: "Emotion",
     badge:
       "https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png",
@@ -126,6 +131,21 @@ const skillsFrameworks = [
   },
 ];
 const skillsTools = [
+  {
+    skill: "Node.js",
+    badge:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg",
+  },
+  {
+    skill: "MongoDB",
+    badge:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    skill: "Heroku",
+    badge:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg",
+  },
   {
     skill: "Firebase",
     badge:

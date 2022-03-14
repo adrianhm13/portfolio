@@ -7,11 +7,11 @@ export default function Presentation() {
       <Styled.BoxBackground>
         <Styled.Hello>Hi there! my name is</Styled.Hello>
         <Styled.Title isName="true">
-          Adrian Hervas<span>.</span> {/*Change span to ::after*/}
+          Adrian Hervas<span>.</span>
         </Styled.Title>
         <Styled.Profession>
           <Styled.Subtitle>I am a self-taught </Styled.Subtitle>
-          <Styled.TypeWrite>Front-End Software Engineer.</Styled.TypeWrite>
+          <Styled.TypeWrite>Full Stack Software Engineer.</Styled.TypeWrite>
         </Styled.Profession>
       </Styled.BoxBackground>
     </Section>
