@@ -7,7 +7,9 @@ export default function Skills() {
     <Section id="Skills">
       <PageTitle title="Skills" />
       <SkillsLanguage />
-      <SkillsFrameworks />
+      <SkillsFrontend />
+      <SkillsBackend />
+      <SkillsUILibraries />
       <SkillsTools />
     </Section>
   );
@@ -45,18 +47,50 @@ function SkillsLanguage() {
   );
 }
 
-function SkillsFrameworks() {
+function SkillsFrontend() {
   return (
     <Styled.SkillsContainer>
-      <Styled.SkillsCategory>
-        Frameworks <span>&</span> Libraries
-      </Styled.SkillsCategory>
+      <Styled.SkillsCategory>Front-End</Styled.SkillsCategory>
       <Styled.SkillsList>
-        {skillsFrameworks.map((skillFramework) => (
+        {skillsFrontend.map((skillFrontend) => (
           <SkillItem
-            key={skillFramework.skill}
-            skill={skillFramework.skill}
-            badge={skillFramework.badge}
+            key={skillFrontend.skill}
+            skill={skillFrontend.skill}
+            badge={skillFrontend.badge}
+          />
+        ))}
+      </Styled.SkillsList>
+    </Styled.SkillsContainer>
+  );
+}
+
+function SkillsUILibraries() {
+  return (
+    <Styled.SkillsContainer>
+      <Styled.SkillsCategory>UI Libraries</Styled.SkillsCategory>
+      <Styled.SkillsList>
+        {skillsUILibraries.map((skillUILibrary) => (
+          <SkillItem
+            key={skillUILibrary.skill}
+            skill={skillUILibrary.skill}
+            badge={skillUILibrary.badge}
+          />
+        ))}
+      </Styled.SkillsList>
+    </Styled.SkillsContainer>
+  );
+}
+
+function SkillsBackend() {
+  return (
+    <Styled.SkillsContainer>
+      <Styled.SkillsCategory>Back-End</Styled.SkillsCategory>
+      <Styled.SkillsList>
+        {skillsBackend.map((skillBackend) => (
+          <SkillItem
+            key={skillBackend.skill}
+            skill={skillBackend.skill}
+            badge={skillBackend.badge}
           />
         ))}
       </Styled.SkillsList>
@@ -103,34 +137,42 @@ const skillsLanguage = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
   },
 ];
-const skillsFrameworks = [
+const skillsFrontend = [
   {
     skill: "React",
     badge:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
-    skill: "Express",
+    skill: "Vue.js",
     badge:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
   },
-  {
-    skill: "Emotion",
-    badge:
-      "https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png",
-  },
+];
+const skillsUILibraries = [
   {
     skill: "MaterialUI",
     badge:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
   },
   {
+    skill: "Emotion",
+    badge:
+      "https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png",
+  },
+
+  {
     skill: "Bootstrap",
     badge:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
   },
 ];
-const skillsTools = [
+const skillsBackend = [
+  {
+    skill: "Express",
+    badge:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
   {
     skill: "Node.js",
     badge:
@@ -142,15 +184,23 @@ const skillsTools = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
-    skill: "Heroku",
-    badge:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg",
-  },
-  {
     skill: "Firebase",
     badge:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
   },
+];
+const skillsTools = [
+  {
+    skill: "Redux",
+    badge:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+  },
+  {
+    skill: "Heroku",
+    badge:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg",
+  },
+
   {
     skill: "Git",
     badge:
